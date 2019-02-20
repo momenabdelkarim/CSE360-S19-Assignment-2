@@ -22,12 +22,11 @@ public class Calculator {
 	}
 
 	/**
-	 * In practice, returns the total (result) of issued calculations.
-	 * Currently returns 0 only.
-	 * @return  just the int '0'
+	 * Returns the total (result) of issued calculations.
+	 * @return the total after the issued calculations
 	 */
 	public int getTotal () {
-		return 0;
+		return total;
 	}
 
 	/**
@@ -37,6 +36,7 @@ public class Calculator {
 	 *                 the total.
 	 */
 	public void add (int value) {
+		total = total + value;
 		
 	}
 
@@ -44,9 +44,10 @@ public class Calculator {
 	 * Subtracts an integer from the total (of the issued calculations so far)
 	 * stored in the 'total' variable.
 	 * @param value the integer, taken from user input, that is to be subtracted
-	 *                 to the total.
+	 *                 from the total.
 	 */
 	public void subtract (int value) {
+		total = total - value;
 		
 	}
 
@@ -57,6 +58,7 @@ public class Calculator {
 	 *                 total.
 	 */
 	public void multiply (int value) {
+		total = total * value;
 		
 	}
 
@@ -68,7 +70,12 @@ public class Calculator {
 	 *                 total.
 	 */
 	public void divide (int value) {
-		
+		if (value != 0) {
+			total = total/value;
+		}
+		else {
+			total = 0;
+		}
 	}
 
 	/**
