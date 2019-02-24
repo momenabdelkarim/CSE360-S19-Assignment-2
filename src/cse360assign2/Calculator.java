@@ -4,8 +4,8 @@
  * Description: This file, Calculator.java, contains one class,
  * Calculator, that contains the necessary constructor and methods to perform
  * common mathematical operations such as adding, subtraction, multiplying,
- * dividing, and getting the result. This class also contains a method that can
- * print the history of issued calculator commands.
+ * dividing, and returning the result of these operations. This class also
+ * contains a method that can return the history of issued calculator commands.
  */
 
 package cse360assign2;
